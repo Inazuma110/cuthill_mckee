@@ -1,0 +1,2 @@
+- 1000index   3.47s user 0.68s system 121% cpu 3.398 total
+- 10000index  19.75s user 1.38s system 104% cpu 20.206 total
