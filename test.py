@@ -44,7 +44,7 @@ def create_cuthill_mckee_matrix(adjacency_matrix):
     return cuthill_mckee_matrix
 
 
-def random_adjacency_matrix(index, fill_rate):
+def random_adjacency_matrix(index, fill_rate=0.1):
     '''
     1辺の要素数がindexのランダムな隣接行列を作成する。
     '''
@@ -65,8 +65,8 @@ def random_adjacency_matrix(index, fill_rate):
     return adjacency_matrix
 
 
-MATRIX = random_adjacency_matrix(10000, 0.1)
-# print(MATRIX)
-# print()
+MATRIX = random_adjacency_matrix(10, 0.1)
+print(MATRIX)
+print()
 AFTER_MATRIX = create_cuthill_mckee_matrix(MATRIX)
-# print(AFTER_MATRIX)
+print(AFTER_MATRIX)
